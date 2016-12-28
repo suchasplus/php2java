@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.suchasplus.php2java</groupId>
+    <artifactId>php2java</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <modules>
+        <module>php2java-array</module>
+        <module>php2java-bc</module>
+        <module>php2java-ctype</module>
+        <module>php2java-datetime</module>
+        <module>php2java-filesystem</module>
+        <module>php2java-math</module>
+        <module>php2java-network</module>
+        <module>php2java-strings</module>
+        <module>php2java-url</module>
+        <module>php2java-var</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <name>PHP2Java</name>
+    <description>php function eqv to java</description>
+    <url>https://github.com/suchasplus/php2java/</url>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>suchasplus</name>
+            <email>suchasplus@gmail.com</email>
+            <organization>suchasplus.com</organization>
+            <organizationUrl>http://blog.suchasplus.com</organizationUrl>
+        </developer>
+    </developers>
+
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.plugin.compiler.version>2.5.1</maven.plugin.compiler.version>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.plugin.compiler.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <!-- WeiboAd MvN Profiles -->
+    <!--
+    <profiles>
+        <profile>
+            <id>weiboad</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>weiboad</id>
+                    <url>http://mvn.weiboad.org/content/groups/public/</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+    -->
+</project>
