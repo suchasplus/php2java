@@ -48,9 +48,9 @@ localeconv
 
 ltrim
 
-md5
+~~md5~~
 
-md5_file
+~~md5_file~~
 
 metaphone
 
@@ -78,9 +78,9 @@ rtrim
 
 setlocale
 
-sha1
+~~sha1~~
 
-sha1_file
+~~sha1_file~~
 
 similar_text
 
